@@ -59,14 +59,15 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     margin: 0 15px 0 15px;
+    cursor:pointer;
 }
 
 .github {
-    background-image: url("img/github.jpg");
+    background-image: url("img/github.png");
 }
 
 .linkedin {
-    background-image: url("img/in.png");
+    background-image: url("img/link.png");
 }
 
 .email {
@@ -81,7 +82,7 @@ h1 {
 }
 
 .modal {
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     position: absolute;
@@ -125,6 +126,7 @@ padding: 20px;
     padding: 5px 10px;
     border-radius: 50%;
     font-weight: bold;
+    cursor:pointer;
 }
 form .btn{
     width: fit-content;
@@ -154,8 +156,9 @@ p {
 
 .pro {
     display: flex;
-    margin: 60px 0 60px 0;
+    padding: 100px 0 100px 0;
     align-items: center;
+    border-bottom: 1px solid darkgray;
 }
 
 .pro p {
@@ -173,31 +176,31 @@ p {
 }
 
 .ct_img {
-    background-image: url("https://private-user-images.githubusercontent.com/145306497/346019237-bbabd0e2-1b47-4896-a770-1d7cd44e0a4f.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjAxNTkyMDUsIm5iZiI6MTcyMDE1ODkwNSwicGF0aCI6Ii8xNDUzMDY0OTcvMzQ2MDE5MjM3LWJiYWJkMGUyLTFiNDctNDg5Ni1hNzcwLTFkN2NkNDRlMGE0Zi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcwNVQwNTU1MDVaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hZWI1YzUxYTE2NDcyYmZkYzQ4OTJlN2RkMDljYTdmNDg5YTk3Mjc5YjNhNDZjMTc2ZWZkNDEyNzFhYWIxOTdiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.GNrSnciqKFJQ6CwmdUGNLrO29JdY1N92FDQw4pMFWq8");
+    background-image: url("./img/calorieTracker.png");
 }
 
 .pong_img {
-    background-image: url("https://private-user-images.githubusercontent.com/145306497/346010588-68cb0532-81d5-4523-8942-f2e0252261f2.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjAxNTc1MDYsIm5iZiI6MTcyMDE1NzIwNiwicGF0aCI6Ii8xNDUzMDY0OTcvMzQ2MDEwNTg4LTY4Y2IwNTMyLTgxZDUtNDUyMy04OTQyLWYyZTAyNTIyNjFmMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcwNVQwNTI2NDZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT01MzlhYzFlN2VlOWJjZWE1MTM3OWU0OTBmNDk3Y2E4NDk3OGFiYmYxNTZlZmM5M2MwMDE0ZGIwMjM0ZDQxYWRjJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.yJCcTHxgxKmJ--vc-c8U0mXVQz3y6LOqxllwXXaTt6o");
+    background-image: url("./img/pong.png");
 }
 
 .maze_img {
-    background-image: url("https://private-user-images.githubusercontent.com/145306497/346027333-a1855734-9e9e-474e-a2a6-f97c0e74d8cb.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjAxNjI0OTcsIm5iZiI6MTcyMDE2MjE5NywicGF0aCI6Ii8xNDUzMDY0OTcvMzQ2MDI3MzMzLWExODU1NzM0LTllOWUtNDc0ZS1hMmE2LWY5N2MwZTc0ZDhjYi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcwNVQwNjQ5NTdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT00YzQ5MTgwODgxNjBmYjQ2NmYzMmZkZmE2Zjc0Y2JiYWYxOWZkNjUyMGJjMzI5ZjViMjkyMGY4ZjQwYjc0NjY5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.7FGq0Tb0q6o3ompjDLCi70cSck6SHW5MeRCmMpCFhPQ");
+    background-image: url("./img/maze.png");
 }
 
 .noise_img {
-    background-image: url("https://private-user-images.githubusercontent.com/145306497/346027855-98e41375-cf30-4fcb-8023-784f18fe319f.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjAxNjI0OTcsIm5iZiI6MTcyMDE2MjE5NywicGF0aCI6Ii8xNDUzMDY0OTcvMzQ2MDI3ODU1LTk4ZTQxMzc1LWNmMzAtNGZjYi04MDIzLTc4NGYxOGZlMzE5Zi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcwNVQwNjQ5NTdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iYjgwZmRkZWUzMDBkMDI0OGRlNmU5NGNhMDNjNDlmYzNlOWU2ZDcyNzliMjQwNDBhMTFlZDMxZWIzMzA5NTI3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.gieH_w_m1t7InZlBiAuI3efFa9rTJ6W8vV83M9Dzyu0");
+    background-image: url("./img/fixImg.png");
 }
 
 .virus_img {
-    background-image: url("https://private-user-images.githubusercontent.com/145306497/346033625-b9fc1b35-6c77-4341-be42-45c1a0b9f283.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjAxNjMzMDksIm5iZiI6MTcyMDE2MzAwOSwicGF0aCI6Ii8xNDUzMDY0OTcvMzQ2MDMzNjI1LWI5ZmMxYjM1LTZjNzctNDM0MS1iZTQyLTQ1YzFhMGI5ZjI4My5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcwNVQwNzAzMjlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jYzg4YTY4NTIzYmRhYjgzOWIzNWNmYjUyY2I3YTU4OTEyNGRhMzExZDA3ODU3ZGZlZWNlOTk4NzJmNWI0M2FkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.hDE52eB-uFs8xATz9CZ2Xtp9tEnCxGVQgcBWdVttN-Q");
+    background-image: url("./img/virus.png");
 }
 
 .shooting_img {
-    background-image: url("https://private-user-images.githubusercontent.com/145306497/346022597-3e2d31b9-8fe0-44c2-bcaf-010b0ff870ba.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjAxNjIzOTIsIm5iZiI6MTcyMDE2MjA5MiwicGF0aCI6Ii8xNDUzMDY0OTcvMzQ2MDIyNTk3LTNlMmQzMWI5LThmZTAtNDRjMi1iY2FmLTAxMGIwZmY4NzBiYS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcwNVQwNjQ4MTJaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yZTA2MmVlMzhhOWZiNjlhOTQ4NDA2ZTI0Mjk3MzcwMTRlMjg3NzAyNzM5ZGI0ZTBlODM0YjI2ZTBkMDZlNGM4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.2Ij_lxIFcbvihVecYkV-PklyOHyHvTeelBqC0JPoZu8");
+    background-image: url("./img/shooting.png");
 }
 
 .snake_img {
-    background-image: url("https://private-user-images.githubusercontent.com/145306497/346030496-7f7d7ebe-b072-4e48-9009-51cf3d1f5aa6.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjAxNjIzNDQsIm5iZiI6MTcyMDE2MjA0NCwicGF0aCI6Ii8xNDUzMDY0OTcvMzQ2MDMwNDk2LTdmN2Q3ZWJlLWIwNzItNGU0OC05MDA5LTUxY2YzZDFmNWFhNi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNzA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDcwNVQwNjQ3MjRaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05ZDkxMDU4ODJlNDBmMGQ5MGEwOWM0MTY4OGUyMjhjMjM2NGEzZDcxZTFhNzJjOTFkYTdiMjFhYzgwNGFlYzZiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.FmgiQfJdf9TEK3ZiGZNOA2tBfn33Zge0oEeK2l9B9PA");
+    background-image: url("./img/snake.png");
     width: 250px;
     height: 400px;
 }
