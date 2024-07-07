@@ -42,22 +42,31 @@
             <div class="modal">
                 <span class="close">X</span>
                 <form action="https://formsubmit.co/18508eac7725e7ec1d2ec2c95994c450" method="post">
+                    <!--HoneyPot-->
+                    <input type="text" name="_honey" style="display: none;">
+
+                    <!--Disable Captcha-->
+                     <input type="hidden" name="_captcha" value="false">
+
+                    <!--Success Message-->
+                     <input type="hidden" name="_next" value=""> 
+
                     <h2>CONTACT</h2>
                     <div class="name form">
                         <label for="firstName">First Name</label>
-                        <input type="text" class="form-control" name="name" id="firstName" required>
+                        <input type="text" class="form-control" name="Name" id="firstName" required>
                     </div>
                     <div class="lastName form">
                         <label for="lastName">Last Name</label>
-                        <input type="text" class="form-control" name="Last Name" id="lastName" required>
+                        <input type="text" class="form-control" name="Last&nbsp;Name" id="lastName" required>
                     </div>
                     <div class="emailInfo form">
                         <label for="emailInfo">Email</label>
-                        <input type="email" class="form-control" name="email" id="emailInfo" required>
+                        <input type="email" class="form-control" name="Email" id="emailInfo" required>
                     </div>
                     <div class="comments form">
                         <label for="comments">Comments</label>
-                        <textarea class="form-control" name="comments" id="comments" rows="5" required></textarea>
+                        <textarea class="form-control" name="comments" id="Comments" rows="5" required></textarea>
                     </div>
                     <div class="btn">
                         <button type="submit" class="btn-submit">Send</button>
