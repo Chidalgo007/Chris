@@ -8,8 +8,13 @@ $(document).ready(function () {
 
     $(".close").click(function () {
         $(".modal").slideUp(600);
+        $("form").get(0).reset();
     });
 
+    $(".btn-submit").click(function(){
+        $(".modal").hide(600);
+        $("form").get(0).reset();
+    })
 
 })
 
