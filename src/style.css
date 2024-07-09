@@ -5,39 +5,91 @@
 
 body {
     background-color: rgb(60, 60, 60);
-    color: blanchedalmond;
+    background-color: black;
+    color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .container {
-    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 60vw;
     margin: auto;
+    margin-bottom: 100px;
+    ;
 }
 
 #head {
     display: flex;
     flex-direction: column;
-    margin: 50px 0 50px 0;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    margin-bottom: 200px;
+    animation: fade_out linear forwards;
+    animation-timeline: view();
+    animation-range: exit;
+}
+
+@keyframes fade_out {
+    to {
+        opacity: 0;
+    }
+}
+
+.jp_img {
+    z-index: -1;
+    opacity: 0.4;
+    position: absolute;
+    width: 90vw;
+    max-height: 100vh;
+    top: 0;
+    left: 0;
+    bottom: 0;
+
+    animation: jp_img linear forwards;
+    animation-timeline: view();
+    animation-range: exit -400px;
+}
+
+@keyframes jp_img {
+
+    85%,
+    100% {
+        opacity: 0;
+        scale: 3;
+    }
 }
 
 .head-top {
-    display: flex;
+    display: none;
+    padding: 0 50px 0 50px;
+}
+
+.intro {
+    display: none;
+    margin: 50px 0 50px 0;
+    padding: 0 50px 0 50px;
 }
 
 .image {
     margin-left: 100px;
     width: 200px;
     height: 200px;
-    border-radius: 35%;
+    border-radius: 40%;
     border: solid 4px blanchedalmond;
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: contain;
+    background-size: cover;
     background-image: url("https://avatars.githubusercontent.com/u/145306497?s=400&u=2037cc60645ab55576dca00a94dd9fe413ed1981&v=4");
-}
-
-.image img {
-    size: 100%;
 }
 
 .info {
@@ -59,7 +111,7 @@ body {
     background-repeat: no-repeat;
     background-size: contain;
     margin: 0 15px 0 15px;
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .github {
@@ -74,11 +126,10 @@ body {
     background-image: url("img/email.png");
 }
 
-h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.name {
+    text-align: center;
     margin-bottom: 20px;
+    padding: 0;
 }
 
 .modal {
@@ -86,6 +137,7 @@ h1 {
     justify-content: center;
     align-items: center;
     position: absolute;
+    top: 20px;
     left: 50%;
     transform: translateX(-50%);
     width: 30vw;
@@ -94,75 +146,129 @@ h1 {
     border: solid 4px blanchedalmond;
     border-radius: 35px;
 }
-form{
+
+form {
     display: flex;
     flex-direction: column;
 }
-form h2{
-width: fit-content;
-margin: auto;
-padding: 20px;
+
+form h2 {
+    width: fit-content;
+    margin: auto;
+    padding: 20px;
 }
-.form{
+
+.form {
     display: flex;
     flex-direction: column;
     padding: 15px;
     justify-content: end;
 }
-.form-control{
+
+.form-control {
     width: 300px;
     padding: 3px;
     border-radius: 8px;
     border: none;
 }
-.form-control:focus{
+
+.form-control:focus {
     outline: 1px solid rgb(5, 120, 250);
 }
-.close{
+
+.close {
     position: absolute;
     right: 20px;
-    top:20px;
-    border:solid 3px blanchedalmond;
+    top: 20px;
+    border: solid 3px blanchedalmond;
     padding: 5px 10px;
     border-radius: 50%;
     font-weight: bold;
-    cursor:pointer;
+    cursor: pointer;
 }
-form .btn{
+
+form .btn {
     width: fit-content;
     margin: auto;
     padding: 30px;
 }
-.btn-submit{
+
+.btn-submit {
     padding: 10px 20px;
     border-radius: 15px;
-    border:solid 2px blanchedalmond;
+    border: solid 2px blanchedalmond;
     background-color: rgb(5, 120, 250);
     color: antiquewhite;
     font-weight: bold;
     font-size: 16px;
 }
 
+.success {
+    display: none;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30vw;
+    height: 10vh;
+    background-color: rgba(30, 50, 70, 0.9);
+    border: solid 4px blanchedalmond;
+    border-radius: 35px;
+}
+
+.success p {
+    text-align: center;
+}
+
+/*------- END FORM ---------------*/
 p {
     text-align: justify;
     line-height: 2;
+
+
+    animation-duration: 2s;
+    animation: text linear forwards;
+    animation-timeline: view(70% 1%);
+
+
 }
 
-#head p {
-    margin: 50px 0 50px 0;
-    padding: 0 100px 0 100px;
+@keyframes text {
+    from {
+        opacity: 0;
+        filter: blur(5px);
+        translate: 150vw;
+    }
 
+    to {
+        opacity: 1;
+        filter: blur(0);
+        translate: 0vw;
+    }
 }
+
 
 .pro {
     display: flex;
-    padding: 100px 0 100px 0;
+    margin-bottom: 200px;
+    padding-top: 50px;
     align-items: center;
-    border-bottom: 1px solid darkgray;
+    justify-content: center;
+}
+
+.col {
+    flex-direction: column;
 }
 
 .pro p {
-    padding: 0 50px 0 50px;
+    padding: 50px;
+}
+
+h1 {
+    padding-left: 50px;
 }
 
 .img {
@@ -170,13 +276,30 @@ p {
     height: 250px;
     border-radius: 35px;
     border: solid 4px blanchedalmond;
+    box-shadow: rgba(218, 216, 216, 0.1) 0px 4px 12px;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
+
+    animation: fade-in linear forwards;
+    animation-timeline: view();
+    animation-range-start: cover;
+    animation-range-end: contain 300px;
+    scale: 0.8;
+    opacity: 0;
+}
+
+@keyframes fade-in {
+    to {
+        scale: 1;
+        opacity: 1;
+    }
 }
 
 .ct_img {
     background-image: url("./img/calorieTracker.png");
+    width: 600px;
+    height: 350px;
 }
 
 .pong_img {
@@ -193,6 +316,8 @@ p {
 
 .virus_img {
     background-image: url("./img/virus.png");
+    width: 600px;
+    height: 350px;
 }
 
 .shooting_img {
@@ -203,4 +328,61 @@ p {
     background-image: url("./img/snake.png");
     width: 250px;
     height: 400px;
+}
+
+/*---------- responsive ----------------*/
+@media only screen and (max-width:1400px) {
+    .pro {
+        flex-direction: column;
+    }
+
+    .container {
+        width: 70vw;
+    }
+}
+
+@media only screen and (max-width:1150px) {
+    .container {
+        width: 80vw;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .container {
+        width: 100vw;
+    }
+
+    .image {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width:670px) {
+    .head-top {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-top: 50px;
+    }
+
+    .info {
+        margin: 0;
+    }
+
+    .img,
+    .ct_img,
+    .virus_img {
+        width: 90vw;
+    }
+
+    .snake_img {
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    p {
+        padding: 5px;
+    }
 }
