@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -24,6 +25,7 @@ body {
     width: 60vw;
     margin: auto;
     margin-bottom: 100px;
+    overflow-x: hidden;
     ;
 }
 
@@ -49,7 +51,7 @@ body {
     z-index: -1;
     opacity: 0.4;
     position: absolute;
-    width: 90vw;
+    max-width: 99vw;
     max-height: 100vh;
     top: 0;
     left: 0;
@@ -227,29 +229,7 @@ form .btn {
 p {
     text-align: justify;
     line-height: 2;
-
-
-    animation-duration: 2s;
-    animation: text linear forwards;
-    animation-timeline: view(70% 1%);
-
-
 }
-
-@keyframes text {
-    from {
-        opacity: 0;
-        filter: blur(5px);
-        translate: 150vw;
-    }
-
-    to {
-        opacity: 1;
-        filter: blur(0);
-        translate: 0vw;
-    }
-}
-
 
 .pro {
     display: flex;
