@@ -15,7 +15,7 @@ $(document).ready(function () {
     });
 
     $(".btn-submit").click(function () {
-        $(".modal").hide(600);
+        $(".modal").hide();
         $(".success").slideDown(800).delay(1000).slideUp(800);
     })
 
