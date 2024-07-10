@@ -14,10 +14,12 @@ $(document).ready(function () {
         $("form").get(0).reset();
     });
 
-    $(".btn-submit").click(function () {
+    $(".btn-submit").submit(function () {
         $(".modal").hide();
         $(".success").slideDown(800).delay(1000).slideUp(800);
-    })
+        $("form").get(0).reset;
+        return false;
+    });
 
 });
 
