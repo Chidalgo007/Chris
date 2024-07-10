@@ -142,7 +142,7 @@ body {
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    width: 30vw;
+    width: 380px;
     height: 80vh;
     background-color: rgba(30, 50, 70, 0.9);
     border: solid 4px blanchedalmond;
@@ -219,7 +219,7 @@ form .btn {
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    width: 30vw;
+    width: 380px;
     background-color: rgba(30, 50, 70, 0.6);
     border: solid 4px blanchedalmond;
     border-radius: 35px;
@@ -368,5 +368,11 @@ h1 {
 @media only screen and (max-width:500px) {
     p {
         padding: 5px;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .modal, .success {
+        width: 95vw;
     }
 }
