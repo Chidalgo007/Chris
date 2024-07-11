@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="src/scripts.js"></script>
+    <title>Chris Hidalgo</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="head">
+            <img class="jp_img" src="src/img/1.jpeg" alt="jp">
+
+            <div class="head-top">
+                <div class="image"></div>
+                <div class="info">
+                    <h1 class="name">Christian Hidalgo</h1>
+                    <div class="contact">
+                        <a href="https://github.com/Chidalgo007" target="_blank">
+                            <div class="icon github"></div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/christian-hidalgo-22251b54/" target="_blank">
+                            <div class="icon linkedin"></div>
+                        </a>
+                        <div class="icon email"></div>
+                    </div>
+                </div>
+            </div>
+            <p class="intro">
+                I am an enthusiastic computer science professional with strong
+                organizational skills and multitasking abilities. I am committed to
+                continuous learning and growth in the tech industry, staying up to date
+                with the latest trends. My career experiences have strengthened my
+                self-motivation and adaptability, allowing me to excel both
+                independently and collaboratively. I am dedicated to constantly
+                developing my personal and professional knowledge in technology and
+                attention to detail to contribute effectively and advance my career.
+            </p>
+            <!------------------- modal for contact ----------------->
+            <div class="modal">
+                <span class="close">X</span>
+                <form action="https://formsubmit.co/18508eac7725e7ec1d2ec2c95994c450" method="post">
+                    <!--HoneyPot-->
+                    <input type="text" name="_honey" style="display: none;">
+
+                    <!--Disable Captcha-->
+                    <input type="hidden" name="_captcha" value="false">
+                    
+                    <!--Success next-->
+                    <input type="hidden" name="_next" value="false">
+
+                    <h2>CONTACT</h2>
+                    <div class="name form">
+                        <label for="firstName">First Name</label>
+                        <input type="text" class="form-control" name="Name" id="firstName" autocomplete="given-name"
+                            required>
+                    </div>
+                    <div class="lastName form">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" class="form-control" name="Last&nbsp;Name" id="lastName"
+                            autocomplete="family-name" required>
+                    </div>
+                    <div class="emailInfo form">
+                        <label for="emailInfo">Email</label>
+                        <input type="email" class="form-control" name="Email" id="emailInfo" autocomplete="off"
+                            required>
+                    </div>
+                    <div class="comments form">
+                        <label for="comments">Comments</label>
+                        <textarea class="form-control" name="Comments" id="comments" rows="5" autocomplete="off"
+                            required></textarea>
+                    </div>
+                    <div class="btn">
+                        <button type="submit" class="btn-submit">Send</button>
+                    </div>
+                </form>
+            </div>
+            <div class="success">
+                <h1 id="contact">CONTACT</h1>
+                <p>The message was sent Successfully !!!</p>
+            </div>
+        </div>
+        <!------------------- END MODAL --------------------------------->
+
+        <div>
+            <h1>CALORIE TRACKER PROJECT</h1>
+            <div class="pro col">
+                <p>This project aims to provide a simple yet effective calorie tracking application, featuring user
+                    login
+                    and
+                    registration to enable secure access to personal data and exploration of the app's functionalities.
+                    Key
+                    features include the ability to input and delete food calorie entries, with detailed categorization
+                    of
+                    calories
+                    by meal type, including fat, carbs, and protein. Users can also manage their profiles by inputting
+                    and
+                    updating their information.
+                    The app offers both daily and weekly views of calorie consumption and displays a weekly bar chart
+                    for
+                    visual analysis of calorie intake. Integration with Apache Derby databases ensures robust data
+                    storage,
+                    while various APIs are utilized to enhance data sources and functionality. This system provides
+                    users
+                    with
+                    a comprehensive tool to manage their dietary intake, supporting healthier lifestyle choices through
+                    detailed tracking and clear visualizations.</p>
+                <a href="https://github.com/Chidalgo007/calorieCountGUI" target="_blank">
+                    <div class="img ct_img"></div>
+                </a>
+            </div>
+        </div>
+        <div>
+            <h1>PONG GAME</h1>
+            <div class="pro pong">
+                <p>Classic and simple PONG game, played agains the computer, the first to reach 5 point wins.</br>
+                    use the SPACE key to lunch the ball and the arrows UP and DOWN to move your player.&#128512 </p>
+
+                <a href="https://github.com/Chidalgo007/Pong" target="_blank">
+                    <div class="img pong_img"></div>
+                </a>
+            </div>
+        </div>
+        <div>
+            <h1>MAZE SIMULATION PROJECT</h1>
+            <div class="pro maze">
+                <a href="https://github.com/Chidalgo007/JavaMazeGUI" target="_blank">
+                    <div class="img maze_img"></div>
+                </a>
+                <p>For a recent university assignment, I developed a maze and implemented an algorithm to find the
+                    shortest
+                    path from the entrance to the exit.
+                    This project involved using nodes and the Depth-First Search (DFS) algorithm to efficiently navigate
+                    through the maze.</p>
+
+            </div>
+        </div>
+        <div>
+            <h1>PICTURE NOISE REMOVER</h1>
+            <div class="pro noise">
+                <p>In another project, I worked on an image processing task where I had to upload a picture with noise
+                    and
+                    remove the noise.
+                    I achieved this by implementing an algorithm that fills the noisy areas with the median color of the
+                    surrounding pixels, effectively restoring the image quality.</p>
+
+                <a href="https://github.com/Chidalgo007/JavaMazeGUI" target="_blank">
+                    <div class="img noise_img"></div>
+                </a>
+            </div>
+        </div>
+        <div>
+            <h1>CELLPHONE VIRUS SIMULATION</h1>
+            <div class="pro col">
+                <p>As part of a university project, I developed a simulation focusing on virus transmission between
+                    cellphones based on proximity. Each cellphone operated independently as a thread within the
+                    simulation.
+                    The objective was to simulate the spread of a virus among cellphones, with infected devices having a
+                    limited time to recover before potentially "dying" or disappearing. Once three or more cellphones
+                    were
+                    infected, one was randomly chosen to visit a repair shop, sequentially, showcasing the dynamics of
+                    viral
+                    spread and system maintenance.
+                    </br>
+                    To interact with the simulation, users could launch the .jar file and dynamically add cellphones
+                    using
+                    the UP arrow key. Pressing the letter "v" initiated the infection process, randomly selecting a
+                    cellphone to become contagious. This project not only demonstrated my proficiency in concurrent
+                    programming and simulation design but also underscored my ability to model real-world scenarios
+                    using
+                    computational techniques.</p>
+                <a href="https://github.com/Chidalgo007/phone-virus" target="_blank">
+                    <div class="img virus_img"></div>
+                </a>
+            </div>
+        </div>
+        <div>
+            <h1>SHOOTING GAME</h1>
+            <div class="pro shooting">
+                <a href="https://github.com/Chidalgo007/ShootingGame" target="_blank">
+                    <div class="img shooting_img"></div>
+                </a>
+                <p>This is a simple shooting game featuring enemy spawning and a life display at the top of the screen.
+                    The game mechanics allow the player to control the spaceship using the arrow keys and shoot using
+                    the
+                    SPACE key.</p>
+            </div>
+        </div>
+        <div>
+            <h1>SNAKE GAME</h1>
+            <div class="pro snake">
+
+                <p>As part of my academic endeavors, I developed a classic Snake game that showcased my proficiency in
+                    game
+                    programming and algorithmic design.
+                    This project utilized a point-based system to establish the snake's movement and position, as well
+                    as
+                    strategically place apples within the game environment.
+                    By implementing effective data structures and algorithms, such as linked lists for the snake's body
+                    segments and random positioning for the apples, I ensured an engaging and responsive gameplay
+                    experience.
+                    This endeavor underscored my capability to combine technical skills with creative game mechanics,
+                    contributing to my comprehensive understanding of interactive software development.</p>
+                <a href="https://github.com/Chidalgo007/Snake" target="_blank">
+                    <div class="img snake_img"></div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
