@@ -146,6 +146,10 @@ body {
     border: solid 4px blanchedalmond;
     border-radius: 35px;
 }
+.success{
+    flex-direction: column;
+    padding: 20px;
+}
 
 form {
     display: flex;
