@@ -35,7 +35,6 @@ $(document).ready(function () {
         centerElement(success);
         success.slideDown(800).delay(1000).slideUp(800);
         this.reset;
-        return false;
     });
 
     function isVisible(el) {
