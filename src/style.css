@@ -134,16 +134,14 @@ body {
     padding: 0;
 }
 
-.modal {
+.modal,
+.success {
     display: none;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    position: fixed;
     top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
     width: 400px;
-    height: 80vh;
     background-color: rgba(30, 50, 70, 0.9);
     border: solid 4px blanchedalmond;
     border-radius: 35px;
@@ -205,24 +203,9 @@ form .btn {
     font-size: 16px;
 }
 
-#contact{
+#contact {
     margin: 0;
-    padding:0 0 20px 0;
-}
-.success {
-    display: none;
-    text-align: center;
-    padding: 40px;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 400px;
-    background-color: rgba(30, 50, 70, 0.6);
-    border: solid 4px blanchedalmond;
-    border-radius: 35px;
+    padding: 0 0 20px 0;
 }
 
 .success p {
@@ -264,13 +247,12 @@ h1 {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-
-    animation: fade-in linear forwards;
-    animation-timeline: view();
-    animation-range-start: cover;
-    animation-range-end: contain 300px;
-    scale: 0.8;
+    scale: 0.7;
     opacity: 0;
+}
+
+.img.visible {
+    animation: fade-in 1s linear forwards;
 }
 
 @keyframes fade-in {
@@ -372,7 +354,9 @@ h1 {
 }
 
 @media only screen and (max-width:400px) {
-    .modal, .success {
+
+    .modal,
+    .success {
         width: 95vw;
     }
 }
