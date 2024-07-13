@@ -137,6 +137,8 @@ body {
 .modal,
 .success {
     display: none;
+    flex-direction: column;
+    padding: 20px;
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -145,10 +147,6 @@ body {
     background-color: rgba(30, 50, 70, 0.9);
     border: solid 4px blanchedalmond;
     border-radius: 35px;
-}
-.success{
-    flex-direction: column;
-    padding: 20px;
 }
 
 form {
